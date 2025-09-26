@@ -1,6 +1,10 @@
-import Mailchimp from 'mailchimp-api-v3';
+import mailchimp from '@mailchimp/mailchimp_marketing';
 
-const mailchimp = new Mailchimp(process.env.MAILCHIMP_API_KEY!);
+// Configure Mailchimp
+mailchimp.setConfig({
+  apiKey: process.env.MAILCHIMP_API_KEY!,
+  server: process.env.MAILCHIMP_SERVER_PREFIX!,
+});
 
 export interface ContactData {
   email: string;
@@ -41,7 +45,7 @@ export class MailchimpService {
     try {
       const subscriberHash = this.getSubscriberHash(contactData.email);
       
-      const contact: MailchimpContact = {
+      const contact: any = {
         email_address: contactData.email,
         status: 'subscribed',
         merge_fields: {
@@ -59,7 +63,11 @@ export class MailchimpService {
 
       // First, try to update existing contact
       try {
-        await mailchimp.put(`/lists/${this.audienceId}/members/${subscriberHash}`, contact);
+        await mailchimp.lists.updateListMember(this.audienceId, subscriberHash, {
+          email_address: contactData.email,
+          status: 'subscribed',
+          merge_fields: contact.merge_fields,
+        });
         
         // Update tags separately
         await this.updateContactTags(subscriberHash, tags);
@@ -68,7 +76,7 @@ export class MailchimpService {
       } catch (error: any) {
         // If contact doesn't exist, create new one
         if (error.status === 404) {
-          await mailchimp.post(`/lists/${this.audienceId}/members`, contact);
+          await mailchimp.lists.addListMember(this.audienceId, contact);
           return { success: true };
         }
         throw error;
@@ -84,7 +92,7 @@ export class MailchimpService {
 
   async updateContactTags(subscriberHash: string, tags: string[]): Promise<void> {
     try {
-      await mailchimp.post(`/lists/${this.audienceId}/members/${subscriberHash}/tags`, {
+      await mailchimp.lists.updateListMemberTags(this.audienceId, subscriberHash, {
         tags: tags.map(tag => ({ name: tag, status: 'active' }))
       });
     } catch (error) {
@@ -96,7 +104,7 @@ export class MailchimpService {
   async getContact(email: string): Promise<MailchimpContact | null> {
     try {
       const subscriberHash = this.getSubscriberHash(email);
-      const response = await mailchimp.get(`/lists/${this.audienceId}/members/${subscriberHash}`);
+      const response = await mailchimp.lists.getListMember(this.audienceId, subscriberHash);
       return response;
     } catch (error: any) {
       if (error.status === 404) {
@@ -118,7 +126,7 @@ export class MailchimpService {
 
   async testConnection(): Promise<{ success: boolean; error?: string }> {
     try {
-      await mailchimp.get(`/lists/${this.audienceId}`);
+      await mailchimp.lists.getList(this.audienceId);
       return { success: true };
     } catch (error: any) {
       return { 
