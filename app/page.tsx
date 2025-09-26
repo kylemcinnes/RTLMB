@@ -153,18 +153,13 @@ export default function HomePage() {
             <div className="donation-note">
               <p><i className="fas fa-info-circle"></i> All donations are processed securely through CanadaHelps.org. Tax receipts are automatically generated.</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section id="newsletter" className="newsletter">
-        <div className="container">
-          <div className="newsletter-content">
-            <h2>Stay Connected</h2>
-            <p>Subscribe to our newsletter to receive updates on our work, upcoming events, and ways to get involved in protecting life in our community.</p>
             
-            <NewsletterForm />
+            {/* Newsletter Signup */}
+            <div className="newsletter-signup-section">
+              <h3>Stay Connected</h3>
+              <p>Subscribe to our newsletter for updates on our work and upcoming events.</p>
+              <NewsletterForm />
+            </div>
           </div>
         </div>
       </section>

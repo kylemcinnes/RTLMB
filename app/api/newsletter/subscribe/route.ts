@@ -18,7 +18,7 @@ const subscribeSchema = z.object({
   fname: z.string().optional(),
   lname: z.string().optional(),
   consent_ip: z.string().ip('Invalid IP address'),
-  consent_src: z.string().default('rtlmb.org/newsletter'),
+  consent_src: z.string().default('rtlmb.org/support'),
 });
 
 export async function POST(request: NextRequest) {

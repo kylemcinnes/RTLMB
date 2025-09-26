@@ -521,6 +521,29 @@ p {
     color: var(--primary-red);
 }
 
+/* Newsletter Signup Section */
+.newsletter-signup-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: var(--light-gray);
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-signup-section h3 {
+    color: var(--navy-blue);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.newsletter-signup-section p {
+    margin-bottom: 2rem;
+    color: var(--text-gray);
+}
+
 /* Newsletter Form */
 .newsletter-form-container {
     display: flex;
@@ -529,12 +552,13 @@ p {
 }
 
 .newsletter-form {
-    background: var(--light-gray);
-    padding: 2.5rem;
-    border-radius: 15px;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
     text-align: left;
     max-width: 500px;
     width: 100%;
+    box-shadow: var(--shadow);
 }
 
 .form-group {

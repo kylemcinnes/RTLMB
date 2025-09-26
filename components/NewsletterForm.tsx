@@ -32,7 +32,7 @@ export default function NewsletterForm({ className = '' }: NewsletterFormProps) 
           fname: formData.fname || undefined,
           lname: formData.lname || undefined,
           consent_ip: '127.0.0.1', // This should be handled server-side
-          consent_src: 'rtlmb.org/newsletter',
+          consent_src: 'rtlmb.org/support',
         }),
       });
 
