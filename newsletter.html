@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Events | RTLMB</title>
+    <meta http-equiv="refresh" content="3;url=events/40-days-for-life.html">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1c2c4c, #9b1c31);
+            color: white;
+            text-align: center;
+        }
+        .redirect-container {
+            max-width: 500px;
+            padding: 2rem;
+        }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 2rem;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h1 {
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+        p {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: white;
+            color: #9b1c31;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="spinner"></div>
+        <h1>Page Moved</h1>
+        <p>Our newsletter section has been updated to focus on events and resources. You're being redirected to our 40 Days for Life page.</p>
+        <a href="events/40-days-for-life.html" class="btn">Go to Events</a>
+    </div>
+    
+    <script>
+        // Redirect after 3 seconds
+        setTimeout(() => {
+            window.location.href = 'events/40-days-for-life.html';
+        }, 3000);
+    </script>
+</body>
+</html>

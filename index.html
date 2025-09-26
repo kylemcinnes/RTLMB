@@ -27,8 +27,14 @@
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#newsletter">Newsletter</a>
-                <a href="#archive">Archive</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-dropdown-toggle">Events <i class="fas fa-chevron-down"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="events/40-days-for-life.html">40 Days for Life</a>
+                        <a href="events/life-chain.html">Life Chain</a>
+                        <a href="resources/abortion-euthanasia-101.html">Resources</a>
+                    </div>
+                </div>
                 <a href="#donate" class="nav-cta">Donate Now</a>
             </div>
             <div class="nav-toggle">
@@ -54,7 +60,7 @@
                 <p class="hero-subtitle">Join Right to Life Mississauga Brampton in promoting a culture of life in our communities</p>
                 <div class="hero-cta">
                     <a href="#donate" class="btn btn-primary">Donate Now</a>
-                    <a href="#newsletter" class="btn btn-secondary">Subscribe to Newsletter</a>
+                    <a href="#events" class="btn btn-secondary">Join Our Events</a>
                 </div>
             </div>
         </div>
@@ -97,6 +103,46 @@
         </div>
     </section>
 
+    <!-- Key Events Section -->
+    <section id="events" class="key-events">
+        <div class="container">
+            <h2>Key Events</h2>
+            <p>Join us in making a difference through prayer, peaceful witness, and education in our community.</p>
+            
+            <div class="events-grid">
+                <div class="event-tile">
+                    <div class="event-tile-icon">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <h3>40 Days for Life</h3>
+                    <p>Join a peaceful, prayerful vigil to end abortion—through 40 days of prayer & fasting, community outreach, and a lawful, loving presence outside abortion facilities.</p>
+                    <a href="events/40-days-for-life.html" class="btn btn-primary">Learn More</a>
+                    <p class="event-note">Mississauga campaign details are managed on 40DaysForLife.com.</p>
+                </div>
+                
+                <div class="event-tile">
+                    <div class="event-tile-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>Life Chain</h3>
+                    <p>Stand for life in a one-hour, prayerful, public witness held across ~350 Canadian locations each year.</p>
+                    <a href="events/life-chain.html" class="btn btn-primary">Find a Location</a>
+                    <p class="event-note">Next Life Chain: Sunday, October 5, 2025 (2–3 pm in most locations—check your city).</p>
+                </div>
+                
+                <div class="event-tile">
+                    <div class="event-tile-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Resources</h3>
+                    <p>Learn the facts on human development, ethics, and the medical reality of abortion and euthanasia from a pro-life perspective.</p>
+                    <a href="resources/abortion-euthanasia-101.html" class="btn btn-primary">Start Learning</a>
+                    <p class="event-note">Content curated from RTLMB's Abortion & Euthanasia 101.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Donation Section -->
     <section id="donate" class="donate">
         <div class="container">
@@ -117,61 +163,6 @@
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section id="newsletter" class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2>Stay Connected</h2>
-                <p>Subscribe to our newsletter to receive updates on our work, upcoming events, and ways to get involved in protecting life in our community.</p>
-                
-                <div class="newsletter-form-container">
-                    <form id="newsletter-form" class="newsletter-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i>
-                            Subscribe to Newsletter
-                        </button>
-                    </form>
-                    
-                    <div class="newsletter-benefits">
-                        <h3>What You'll Receive:</h3>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Monthly updates on our work</li>
-                            <li><i class="fas fa-check"></i> Information about upcoming events</li>
-                            <li><i class="fas fa-check"></i> Ways to get involved</li>
-                            <li><i class="fas fa-check"></i> Prayer requests and intentions</li>
-                            <li><i class="fas fa-star"></i> <strong>Members receive exclusive content</strong></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Archive Section -->
-    <section id="archive" class="archive">
-        <div class="container">
-            <h2>Past Newsletters</h2>
-            <p>Browse our collection of past newsletters to stay informed about our ongoing work and mission.</p>
-            
-            <div class="archive-grid" id="newsletter-grid">
-                <!-- Newsletter items will be dynamically loaded here -->
-                <div class="loading-placeholder">
-                    <i class="fas fa-spinner fa-spin"></i>
-                    <p>Loading newsletters...</p>
-                </div>
-            </div>
-            
-            <div class="archive-cta">
-                <a href="#newsletter" class="btn btn-primary">Subscribe to Get Latest Newsletters</a>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -188,7 +179,9 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#donate">Donate</a></li>
-                        <li><a href="#newsletter">Newsletter</a></li>
+                        <li><a href="events/40-days-for-life.html">40 Days for Life</a></li>
+                        <li><a href="events/life-chain.html">Life Chain</a></li>
+                        <li><a href="resources/abortion-euthanasia-101.html">Resources</a></li>
                     </ul>
                 </div>
                 
@@ -215,19 +208,6 @@
         </div>
     </footer>
 
-    <!-- Newsletter Signup Success Modal -->
-    <div id="newsletter-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-body">
-                <i class="fas fa-check-circle success-icon"></i>
-                <h3>Thank You!</h3>
-                <p>You've successfully subscribed to our newsletter. You'll receive our next update soon!</p>
-                <p class="modal-note">Consider becoming a member to receive exclusive content and support our mission.</p>
-                <a href="#donate" class="btn btn-primary">Become a Member</a>
-            </div>
-        </div>
-    </div>
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
