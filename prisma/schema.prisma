@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ConsentLog {
+  id          String   @id @default(cuid())
+  email       String
+  firstName   String?
+  lastName    String?
+  consentDt   DateTime
+  consentSrc  String
+  consentIp   String
+  userAgent   String?
+  policyVersion String @default("1.0")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([email])
+  @@index([consentDt])
+}
+
+model ImportLog {
+  id          String   @id @default(cuid())
+  fileName    String
+  totalRows   Int
+  createdRows Int
+  updatedRows Int
+  errorRows   Int
+  errors      String?  // JSON string of errors
+  startedAt   DateTime @default(now())
+  completedAt DateTime?
+  status      String   @default("running") // running, completed, failed
+
+  @@index([status])
+  @@index([startedAt])
+}
