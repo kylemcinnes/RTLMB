@@ -104,43 +104,9 @@
                 <h2>Support Our Mission</h2>
                 <p>Your donation helps us continue our vital work protecting life and supporting families in our community.</p>
                 
-                <div class="donation-options">
-                    <div class="donation-card">
-                        <h3>Individual Membership</h3>
-                        <div class="price">$25<span>/year</span></div>
-                        <ul>
-                            <li>Automatic membership upon donation</li>
-                            <li>Exclusive member newsletter</li>
-                            <li>Invitation to special events</li>
-                            <li>Voting rights at AGM</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary" id="donate-individual">Donate Now</a>
-                    </div>
-                    
-                    <div class="donation-card featured">
-                        <div class="featured-badge">Most Popular</div>
-                        <h3>Family Membership</h3>
-                        <div class="price">$30<span>/year</span></div>
-                        <ul>
-                            <li>Automatic family membership</li>
-                            <li>Exclusive member newsletter</li>
-                            <li>Invitation to special events</li>
-                            <li>Voting rights at AGM</li>
-                            <li>Family resources & support</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary" id="donate-family">Donate Now</a>
-                    </div>
-                    
-                    <div class="donation-card">
-                        <h3>Custom Amount</h3>
-                        <div class="price">Any<span>amount</span></div>
-                        <ul>
-                            <li>Choose your own amount</li>
-                            <li>One-time or recurring</li>
-                            <li>Tax receipt provided</li>
-                            <li>Membership included if $25+</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary" id="donate-custom">Donate Now</a>
+                <div class="donation-form-container">
+                    <div class="donation-form-wrapper">
+                        <script id="ch_cdn_embed" type="text/javascript" src="https://www.canadahelps.org/secure/js/cdf_embed.2.js" charSet="utf-8" data-language="en" data-page-id="136674" data-root-url="https://www.canadahelps.org" data-formtype="1" data-cfasync="false"></script>
                     </div>
                 </div>
                 
@@ -193,53 +159,11 @@
             <h2>Past Newsletters</h2>
             <p>Browse our collection of past newsletters to stay informed about our ongoing work and mission.</p>
             
-            <div class="archive-grid">
-                <div class="newsletter-item">
-                    <div class="newsletter-preview">
-                        <i class="fas fa-file-pdf"></i>
-                        <h3>December 2023</h3>
-                        <p>Year in Review & Holiday Message</p>
-                    </div>
-                    <div class="newsletter-actions">
-                        <a href="#" class="btn btn-secondary">View PDF</a>
-                        <a href="#" class="btn btn-outline">Download</a>
-                    </div>
-                </div>
-                
-                <div class="newsletter-item">
-                    <div class="newsletter-preview">
-                        <i class="fas fa-file-pdf"></i>
-                        <h3>November 2023</h3>
-                        <p>Community Events & Volunteer Opportunities</p>
-                    </div>
-                    <div class="newsletter-actions">
-                        <a href="#" class="btn btn-secondary">View PDF</a>
-                        <a href="#" class="btn btn-outline">Download</a>
-                    </div>
-                </div>
-                
-                <div class="newsletter-item">
-                    <div class="newsletter-preview">
-                        <i class="fas fa-file-pdf"></i>
-                        <h3>October 2023</h3>
-                        <p>Life Chain & Awareness Campaign</p>
-                    </div>
-                    <div class="newsletter-actions">
-                        <a href="#" class="btn btn-secondary">View PDF</a>
-                        <a href="#" class="btn btn-outline">Download</a>
-                    </div>
-                </div>
-                
-                <div class="newsletter-item">
-                    <div class="newsletter-preview">
-                        <i class="fas fa-file-pdf"></i>
-                        <h3>September 2023</h3>
-                        <p>Back to School & Family Resources</p>
-                    </div>
-                    <div class="newsletter-actions">
-                        <a href="#" class="btn btn-secondary">View PDF</a>
-                        <a href="#" class="btn btn-outline">Download</a>
-                    </div>
+            <div class="archive-grid" id="newsletter-grid">
+                <!-- Newsletter items will be dynamically loaded here -->
+                <div class="loading-placeholder">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading newsletters...</p>
                 </div>
             </div>
             

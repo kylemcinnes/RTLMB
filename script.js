@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initNewsletterForm();
     initModal();
-    initDonationLinks();
     initScrollEffects();
+    initNewsletterArchive();
 });
 
 // Navigation functionality
@@ -191,55 +191,6 @@ function showNewsletterModal() {
     }, 5000);
 }
 
-// Donation links setup
-function initDonationLinks() {
-    // Replace these placeholder URLs with actual CanadaHelps.org URLs
-    const donationUrls = {
-        individual: 'https://www.canadahelps.org/en/charities/right-to-life-mississauga-brampton/donate/individual/',
-        family: 'https://www.canadahelps.org/en/charities/right-to-life-mississauga-brampton/donate/family/',
-        custom: 'https://www.canadahelps.org/en/charities/right-to-life-mississauga-brampton/donate/custom/'
-    };
-    
-    // Set up donation buttons
-    const individualBtn = document.getElementById('donate-individual');
-    const familyBtn = document.getElementById('donate-family');
-    const customBtn = document.getElementById('donate-custom');
-    
-    if (individualBtn) {
-        individualBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            openDonationPage(donationUrls.individual, 'Individual Membership');
-        });
-    }
-    
-    if (familyBtn) {
-        familyBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            openDonationPage(donationUrls.family, 'Family Membership');
-        });
-    }
-    
-    if (customBtn) {
-        customBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            openDonationPage(donationUrls.custom, 'Custom Donation');
-        });
-    }
-}
-
-// Open donation page
-function openDonationPage(url, type) {
-    // Show a notification that this would open the donation page
-    showNotification(`Opening ${type} donation page...`, 'info');
-    
-    // In production, this would open the actual CanadaHelps.org URL
-    // window.open(url, '_blank');
-    
-    // For now, show a placeholder message
-    setTimeout(() => {
-        showNotification('Please replace the donation URLs with actual CanadaHelps.org links for your organization.', 'info');
-    }, 1000);
-}
 
 // Scroll effects and animations
 function initScrollEffects() {
@@ -258,7 +209,7 @@ function initScrollEffects() {
     }, observerOptions);
     
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.mission-point, .donation-card, .newsletter-item');
+    const animateElements = document.querySelectorAll('.mission-point, .newsletter-item');
     animateElements.forEach(el => {
         observer.observe(el);
     });
@@ -415,9 +366,115 @@ function sendToCRM(data) {
     // });
 }
 
+// Newsletter Archive functionality
+function initNewsletterArchive() {
+    const newsletterGrid = document.getElementById('newsletter-grid');
+    
+    if (!newsletterGrid) {
+        console.error('Newsletter grid not found');
+        return;
+    }
+    
+    // Load newsletter data
+    loadNewsletters();
+}
+
+// Load newsletters from JSON file
+async function loadNewsletters() {
+    const newsletterGrid = document.getElementById('newsletter-grid');
+    
+    if (!newsletterGrid) {
+        console.error('Newsletter grid not found');
+        return;
+    }
+    
+    try {
+        const response = await fetch('/public/newsletters/index.json');
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const newsletters = await response.json();
+        
+        // Validate newsletter data
+        if (!Array.isArray(newsletters)) {
+            throw new Error('Invalid newsletter data format');
+        }
+        
+        // Clear loading placeholder
+        newsletterGrid.innerHTML = '';
+        
+        // Generate newsletter cards
+        newsletters.forEach(newsletter => {
+            if (newsletter.title && newsletter.subtitle && newsletter.filename) {
+                const newsletterCard = createNewsletterCard(newsletter);
+                newsletterGrid.appendChild(newsletterCard);
+            } else {
+                console.warn('Skipping invalid newsletter entry:', newsletter);
+            }
+        });
+        
+        // Show message if no newsletters found
+        if (newsletters.length === 0) {
+            newsletterGrid.innerHTML = `
+                <div class="loading-placeholder">
+                    <i class="fas fa-inbox"></i>
+                    <p>No newsletters available at this time.</p>
+                </div>
+            `;
+        }
+        
+        // Re-initialize scroll effects for new elements
+        initScrollEffects();
+        
+    } catch (error) {
+        console.error('Error loading newsletters:', error);
+        showNewsletterError();
+    }
+}
+
+// Create newsletter card HTML
+function createNewsletterCard(newsletter) {
+    const card = document.createElement('div');
+    card.className = 'newsletter-item';
+    
+    const pdfUrl = `/public/newsletters/${newsletter.filename}`;
+    
+    card.innerHTML = `
+        <div class="newsletter-preview">
+            <i class="fas fa-file-pdf"></i>
+            <h3>${newsletter.title}</h3>
+            <p>${newsletter.subtitle}</p>
+        </div>
+        <div class="newsletter-actions">
+            <a href="${pdfUrl}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View PDF</a>
+            <a href="${pdfUrl}" class="btn btn-outline" download="${newsletter.filename}">Download</a>
+        </div>
+    `;
+    
+    return card;
+}
+
+// Show error message if newsletters fail to load
+function showNewsletterError() {
+    const newsletterGrid = document.getElementById('newsletter-grid');
+    
+    if (newsletterGrid) {
+        newsletterGrid.innerHTML = `
+            <div class="loading-placeholder">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Unable to load newsletters at this time. Please try again later.</p>
+                <button class="btn btn-primary" onclick="loadNewsletters()">Retry</button>
+            </div>
+        `;
+    }
+}
+
 // Export functions for potential external use
 window.RTLMB = {
     showNotification,
     sendToCRM,
-    submitNewsletterForm
+    submitNewsletterForm,
+    loadNewsletters
 }; 
