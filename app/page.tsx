@@ -157,9 +157,22 @@ export default function HomePage() {
             </div>
             
             {/* Newsletter Signup */}
-            <div className="newsletter-signup-section">
-              <h3>Stay Connected</h3>
-              <p>Subscribe to our newsletter for updates on our work and upcoming events.</p>
+            <div className="newsletter-signup-section" style={{ 
+              display: 'block !important', 
+              visibility: 'visible !important', 
+              opacity: '1 !important',
+              marginTop: '3rem',
+              padding: '2rem',
+              background: '#f5f5f5',
+              border: '2px solid red',
+              borderRadius: '15px',
+              textAlign: 'center',
+              maxWidth: '600px',
+              marginLeft: 'auto',
+              marginRight: 'auto'
+            }}>
+              <h3 style={{ color: '#1c2c4c', marginBottom: '1rem', fontSize: '1.5rem' }}>Stay Connected</h3>
+              <p style={{ marginBottom: '2rem', color: '#666' }}>Subscribe to our newsletter for updates on our work and upcoming events.</p>
               <NewsletterForm />
             </div>
             
