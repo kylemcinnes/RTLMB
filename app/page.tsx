@@ -1,3 +1,5 @@
+'use client';
+
 import NewsletterForm from '@/components/NewsletterForm';
 
 export default function HomePage() {
@@ -160,6 +162,7 @@ export default function HomePage() {
               <p>Subscribe to our newsletter for updates on our work and upcoming events.</p>
               <NewsletterForm />
             </div>
+            
           </div>
         </div>
       </section>
