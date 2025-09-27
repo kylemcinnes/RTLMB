@@ -164,7 +164,6 @@ export default function HomePage() {
               marginTop: '3rem',
               padding: '2rem',
               background: '#f5f5f5',
-              border: '2px solid red',
               borderRadius: '15px',
               textAlign: 'center',
               maxWidth: '600px',
