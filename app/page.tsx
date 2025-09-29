@@ -264,7 +264,7 @@ export default function HomePage() {
             <div className="footer-section">
               <h4>Contact</h4>
               <p><i className="fas fa-envelope"></i> info@rtlmb.ca</p>
-              <p><i className="fas fa-phone"></i> (905) 555-0123</p>
+              <p><i className="fas fa-phone"></i> 1-800-395-HELP</p>
               <p><i className="fas fa-map-marker-alt"></i> Mississauga & Brampton, ON</p>
             </div>
             

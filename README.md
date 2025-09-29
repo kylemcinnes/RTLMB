@@ -77,7 +77,7 @@ const donationUrls = {
 #### 2. Contact Information
 Update contact details in `index.html`:
 - Email: `info@rtlmb.ca`
-- Phone: `(905) 555-0123`
+- Phone: `1-800-395-HELP`
 - Social media links
 
 #### 3. Newsletter Integration
