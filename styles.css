@@ -1107,6 +1107,77 @@ p {
     color: var(--primary-red);
 }
 
+.nav-dropdown-menu a.nav-dropdown-youth {
+    font-weight: 600;
+    color: var(--primary-red);
+}
+
+.nav-dropdown-menu a.nav-dropdown-youth:hover {
+    background: rgba(155, 28, 49, 0.08);
+    color: var(--primary-red);
+}
+
+/* Event Banner (Youth promotion) */
+.event-banner {
+    padding: 2.5rem 0;
+    background: linear-gradient(135deg, rgba(28, 44, 76, 0.04), rgba(155, 28, 49, 0.06));
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    animation: eventBannerFadeIn 0.6s ease;
+}
+
+@keyframes eventBannerFadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.event-banner-inner {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.event-banner-title {
+    color: var(--navy-blue);
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.event-banner-text {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.event-banner-text strong {
+    color: var(--navy-blue);
+}
+
+.event-banner-cta {
+    margin-top: 0.5rem;
+}
+
+/* Footer youth CTA */
+.footer-youth-cta {
+    margin-bottom: 0.75rem !important;
+}
+
+.footer-youth-cta a {
+    color: var(--primary-red);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-youth-cta a:hover {
+    text-decoration: underline;
+}
+
+/* Youth event tile subtle emphasis */
+.event-tile-youth::before {
+    background: linear-gradient(135deg, var(--primary-red), #b91c47);
+}
+
 /* Key Events Tiles */
 .key-events {
     padding: 100px 0;
@@ -1256,6 +1327,18 @@ p {
     
     .archive-grid {
         grid-template-columns: 1fr;
+    }
+
+    .event-banner {
+        padding: 1.75rem 0;
+    }
+
+    .event-banner-title {
+        font-size: 1.5rem;
+    }
+
+    .event-banner-text {
+        font-size: 1rem;
     }
     
     .newsletter-actions {
