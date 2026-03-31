@@ -53,8 +53,8 @@ export async function POST(request: NextRequest) {
 
     const contactData = {
       email: consentLog.email,
-      firstName: consentLog.firstName,
-      lastName: consentLog.lastName,
+      firstName: consentLog.firstName ?? undefined,
+      lastName: consentLog.lastName ?? undefined,
       consentDt: consentLog.consentDt.toISOString(),
       consentSrc: consentLog.consentSrc,
       consentIp: consentLog.consentIp,

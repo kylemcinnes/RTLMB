@@ -935,6 +935,18 @@ p {
     margin-top: 1rem;
 }
 
+.event-poster-figure {
+    margin: 1rem 0 0;
+    text-align: center;
+}
+
+.event-poster-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
 .event-info p {
     margin: 0.5rem 0;
     font-size: 0.9rem;
@@ -1117,7 +1129,7 @@ p {
     color: var(--primary-red);
 }
 
-/* Event Banner (Youth promotion) */
+/* Event Banner (featured event) */
 .event-banner {
     padding: 2.5rem 0;
     background: linear-gradient(135deg, rgba(28, 44, 76, 0.04), rgba(155, 28, 49, 0.06));

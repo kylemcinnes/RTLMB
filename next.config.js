@@ -12,6 +12,8 @@ const nextConfig = {
       { source: '/newsletters', destination: '/events/40-days-for-life', permanent: true },
       { source: '/newsletter', destination: '/events/40-days-for-life', permanent: true },
       { source: '/past-newsletters', destination: '/events/life-chain', permanent: true },
+      { source: '/youth', destination: '/', permanent: false },
+      { source: '/youth/', destination: '/', permanent: false },
     ];
   },
 }

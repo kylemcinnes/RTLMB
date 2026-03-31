@@ -1,4 +1,4 @@
-import { RateLimiterMemory } from 'rate-limiter-flexible';
+import { RateLimiterMemory, RateLimiterRes } from 'rate-limiter-flexible';
 
 // Rate limiter for newsletter subscriptions
 export const newsletterRateLimiter = new RateLimiterMemory({
@@ -25,11 +25,12 @@ export async function checkRateLimit(
       remainingPoints: resRateLimiter.remainingPoints,
       msBeforeNext: resRateLimiter.msBeforeNext,
     };
-  } catch (rejRes) {
+  } catch (rejRes: unknown) {
+    const res = rejRes as RateLimiterRes;
     return {
       allowed: false,
       remainingPoints: 0,
-      msBeforeNext: rejRes.msBeforeNext,
+      msBeforeNext: res.msBeforeNext,
     };
   }
 }

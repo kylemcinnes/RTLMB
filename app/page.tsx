@@ -15,6 +15,7 @@ export default function HomePage() {
             <div className="nav-dropdown">
               <a href="#" className="nav-dropdown-toggle">Events <i className="fas fa-chevron-down"></i></a>
               <div className="nav-dropdown-menu">
+                <a href="/events/melissa-ohden-speaker" className="nav-dropdown-youth">Melissa Ohden Evening</a>
                 <a href="/events/40-days-for-life">40 Days for Life</a>
                 <a href="/events/life-chain">Life Chain</a>
                 <a href="/resources/abortion-euthanasia-101">Resources</a>
@@ -87,6 +88,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="event-banner">
+        <div className="container">
+          <div className="event-banner-inner">
+            <h2 className="event-banner-title">Hear from a Late-Term Abortion Survivor</h2>
+            <p className="event-banner-text">St. Joseph&apos;s Centre of Hope for Women invites you to an evening with <strong>Melissa Ohden</strong> (MSW)—survivor, author, and founder of the Abortion Survivors Network—sharing her story of survival, forgiveness, and hope. Speaker series with desserts and coffee. <strong>Wednesday, April 8, 2026</strong> · 7–9 p.m. · John Paul II Polish Cultural Centre, Mississauga. Free tickets; registration required.</p>
+            <a href="/events/melissa-ohden-speaker" className="btn btn-primary event-banner-cta">Details &amp; register</a>
+          </div>
+        </div>
+      </section>
+
       {/* Key Events Section */}
       <section id="events" className="key-events">
         <div className="container">
@@ -94,6 +105,16 @@ export default function HomePage() {
           <p>Join us in making a difference through prayer, peaceful witness, and education in our community.</p>
           
           <div className="events-grid">
+            <div className="event-tile event-tile-youth">
+              <div className="event-tile-icon">
+                <i className="fas fa-microphone"></i>
+              </div>
+              <h3>Melissa Ohden — Speaker Evening</h3>
+              <p>Rare opportunity to hear a documented late-term abortion survivor. Melissa Ohden shares her journey from survival to advocacy—with medical records, reconciliation, and a message of love. Hosted by St. Joseph&apos;s Centre of Hope for Women.</p>
+              <a href="/events/melissa-ohden-speaker" className="btn btn-primary">Full details &amp; poster</a>
+              <p className="event-note">April 8, 2026 · Mississauga · Free tickets via sjcentre.ca</p>
+            </div>
+
             <div className="event-tile">
               <div className="event-tile-icon">
                 <i className="fas fa-pray"></i>
@@ -255,6 +276,7 @@ export default function HomePage() {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#donate">Donate</a></li>
+                <li><a href="/events/melissa-ohden-speaker">Melissa Ohden Evening</a></li>
                 <li><a href="/events/40-days-for-life">40 Days for Life</a></li>
                 <li><a href="/events/life-chain">Life Chain</a></li>
                 <li><a href="/resources/abortion-euthanasia-101">Resources</a></li>
@@ -279,6 +301,7 @@ export default function HomePage() {
           </div>
           
           <div className="footer-bottom">
+            <p className="footer-youth-cta">Speaker evening April 8 — <a href="/events/melissa-ohden-speaker">Details &amp; registration</a></p>
             <p>&copy; 2024 Right to Life Mississauga Brampton. All rights reserved.</p>
           </div>
         </div>
