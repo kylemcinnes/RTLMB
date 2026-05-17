@@ -15,7 +15,7 @@ export default function HomePage() {
             <div className="nav-dropdown">
               <a href="#" className="nav-dropdown-toggle">Events <i className="fas fa-chevron-down"></i></a>
               <div className="nav-dropdown-menu">
-                <a href="/events/melissa-ohden-speaker" className="nav-dropdown-youth">Melissa Ohden Evening</a>
+                <a href="/events/toronto-march-for-life" className="nav-dropdown-youth">Toronto March for Life</a>
                 <a href="/events/40-days-for-life">40 Days for Life</a>
                 <a href="/events/life-chain">Life Chain</a>
                 <a href="/resources/abortion-euthanasia-101">Resources</a>
@@ -91,9 +91,9 @@ export default function HomePage() {
       <section className="event-banner">
         <div className="container">
           <div className="event-banner-inner">
-            <h2 className="event-banner-title">Hear from a Late-Term Abortion Survivor</h2>
-            <p className="event-banner-text">St. Joseph&apos;s Centre of Hope for Women invites you to an evening with <strong>Melissa Ohden</strong> (MSW)—survivor, author, and founder of the Abortion Survivors Network—sharing her story of survival, forgiveness, and hope. Speaker series with desserts and coffee. <strong>Wednesday, April 8, 2026</strong> · 7–9 p.m. · John Paul II Polish Cultural Centre, Mississauga. Free tickets; registration required.</p>
-            <a href="/events/melissa-ohden-speaker" className="btn btn-primary event-banner-cta">Details &amp; register</a>
+            <h2 className="event-banner-title">March for Life in Toronto</h2>
+            <p className="event-banner-text">On <strong>Saturday, May 23, 2026</strong>, join the largest annual pro-life gathering in the country: rally and speeches at Queen&apos;s Park, a peaceful march through downtown Toronto, and optional afternoon workshops (advance registration). RTLMB invites Peel families, parishes, and students to stand together for every human life.</p>
+            <a href="/events/toronto-march-for-life" className="btn btn-primary event-banner-cta">Details &amp; official links</a>
           </div>
         </div>
       </section>
@@ -107,12 +107,12 @@ export default function HomePage() {
           <div className="events-grid">
             <div className="event-tile event-tile-youth">
               <div className="event-tile-icon">
-                <i className="fas fa-microphone"></i>
+                <i className="fas fa-person-walking"></i>
               </div>
-              <h3>Melissa Ohden — Speaker Evening</h3>
-              <p>Rare opportunity to hear a documented late-term abortion survivor. Melissa Ohden shares her journey from survival to advocacy—with medical records, reconciliation, and a message of love. Hosted by St. Joseph&apos;s Centre of Hope for Women.</p>
-              <a href="/events/melissa-ohden-speaker" className="btn btn-primary">Full details &amp; poster</a>
-              <p className="event-note">April 8, 2026 · Mississauga · Free tickets via sjcentre.ca</p>
+              <h3>Toronto March for Life</h3>
+              <p>Rally, march, and workshops in Canada&apos;s largest city—one day to make the pro-life witness impossible to ignore. Bring your group from Mississauga or Brampton; carpool, plan your route, and register for workshops on the official site.</p>
+              <a href="/events/toronto-march-for-life" className="btn btn-primary">Schedule &amp; location</a>
+              <p className="event-note">Saturday, May 23, 2026 · Queen&apos;s Park, Toronto · torontomarchforlife.ca</p>
             </div>
 
             <div className="event-tile">
@@ -276,7 +276,7 @@ export default function HomePage() {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#donate">Donate</a></li>
-                <li><a href="/events/melissa-ohden-speaker">Melissa Ohden Evening</a></li>
+                <li><a href="/events/toronto-march-for-life">Toronto March for Life</a></li>
                 <li><a href="/events/40-days-for-life">40 Days for Life</a></li>
                 <li><a href="/events/life-chain">Life Chain</a></li>
                 <li><a href="/resources/abortion-euthanasia-101">Resources</a></li>
@@ -301,7 +301,7 @@ export default function HomePage() {
           </div>
           
           <div className="footer-bottom">
-            <p className="footer-youth-cta">Speaker evening April 8 — <a href="/events/melissa-ohden-speaker">Details &amp; registration</a></p>
+            <p className="footer-youth-cta">Toronto March for Life — <a href="/events/toronto-march-for-life">May 23, 2026 · details</a></p>
             <p>&copy; 2024 Right to Life Mississauga Brampton. All rights reserved.</p>
           </div>
         </div>

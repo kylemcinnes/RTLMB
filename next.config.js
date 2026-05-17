@@ -14,6 +14,7 @@ const nextConfig = {
       { source: '/past-newsletters', destination: '/events/life-chain', permanent: true },
       { source: '/youth', destination: '/', permanent: false },
       { source: '/youth/', destination: '/', permanent: false },
+      { source: '/events/melissa-ohden-speaker', destination: '/events/toronto-march-for-life', permanent: true },
     ];
   },
 }
