@@ -291,12 +291,18 @@ export default function HomePage() {
             </div>
             
             <div className="footer-section">
-              <h4>Follow Us</h4>
-              <div className="social-links">
-                <a href="#"><i className="fab fa-facebook"></i></a>
-                <a href="#"><i className="fab fa-twitter"></i></a>
-                <a href="#"><i className="fab fa-instagram"></i></a>
-              </div>
+              <h4>Follow us</h4>
+              <a
+                href="https://www.instagram.com/righttolifemb/"
+                className="footer-instagram-cta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-instagram" aria-hidden="true"></i>
+                <span>
+                  Follow <strong>@righttolifemb</strong> on Instagram
+                </span>
+              </a>
             </div>
           </div>
           

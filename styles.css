@@ -721,6 +721,44 @@ p {
     transform: translateY(-2px);
 }
 
+/* Footer: single prominent Instagram follow */
+.footer-instagram-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 320px;
+    padding: 0.9rem 1.35rem;
+    margin-top: 0.35rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.35;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 0 4px 14px rgba(188, 24, 136, 0.35);
+    transition: var(--transition);
+    min-height: 48px;
+    box-sizing: border-box;
+}
+
+.footer-instagram-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(188, 24, 136, 0.45);
+    color: #fff !important;
+}
+
+.footer-instagram-cta .fab {
+    font-size: 1.55rem;
+    flex-shrink: 0;
+}
+
+.footer-instagram-cta span {
+    text-align: left;
+}
+
 .footer-bottom {
     border-top: 1px solid #444;
     padding-top: 2rem;
@@ -1364,6 +1402,11 @@ p {
     
     .social-links {
         justify-content: center;
+    }
+
+    .footer-instagram-cta {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
