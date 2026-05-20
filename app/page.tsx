@@ -92,7 +92,7 @@ export default function HomePage() {
         <div className="container">
           <div className="event-banner-inner">
             <h2 className="event-banner-title">March for Life in Toronto</h2>
-            <p className="event-banner-text">On <strong>Saturday, May 23, 2026</strong>, join the largest annual pro-life gathering in the country: rally and speeches at Queen&apos;s Park, a peaceful march through downtown Toronto, and optional afternoon workshops (advance registration). RTLMB invites Peel families, parishes, and students to stand together for every human life.</p>
+            <p className="event-banner-text">On <strong>Saturday, May 23, 2026</strong>, join the largest annual pro-life gathering in the country: rally and speeches at Queen&apos;s Park North (King Edward VII Equestrian Statue, 110 Wellesley St West), a peaceful march through downtown Toronto, and optional afternoon workshops (advance registration). RTLMB invites Peel families, parishes, and students to stand together for every human life.</p>
             <a href="/events/toronto-march-for-life" className="btn btn-primary event-banner-cta">Details &amp; official links</a>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function HomePage() {
               <h3>Toronto March for Life</h3>
               <p>Rally, march, and workshops in Canada&apos;s largest city—one day to make the pro-life witness impossible to ignore. Bring your group from Mississauga or Brampton; carpool, plan your route, and register for workshops on the official site.</p>
               <a href="/events/toronto-march-for-life" className="btn btn-primary">Schedule &amp; location</a>
-              <p className="event-note">Saturday, May 23, 2026 · Queen&apos;s Park, Toronto · torontomarchforlife.ca</p>
+              <p className="event-note">Saturday, May 23, 2026 · Queen&apos;s Park North, Toronto · torontomarchforlife.ca</p>
             </div>
 
             <div className="event-tile">

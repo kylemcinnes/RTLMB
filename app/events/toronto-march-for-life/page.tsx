@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Toronto March for Life | RTLMB',
   description:
-    'Join the Toronto March for Life—rally, march, and workshops. Saturday May 23, 2026 at Queen\'s Park. Details at torontomarchforlife.ca.',
+    "Join the Toronto March for Life—rally, march, and workshops. Saturday May 23, 2026 at Queen's Park North (110 Wellesley St West). Details at torontomarchforlife.ca.",
 };
 
 export default function TorontoMarchForLifePage() {
@@ -53,7 +53,7 @@ export default function TorontoMarchForLifePage() {
             <h1 className="hero-title">Toronto March for Life</h1>
             <p className="hero-subtitle">
               Stand with thousands in Canada&apos;s largest city for the annual rally and march—then deepen your advocacy with optional afternoon workshops.{' '}
-              <strong>Saturday, May 23, 2026</strong> · Queen&apos;s Park, Toronto.
+              <strong>Saturday, May 23, 2026</strong> · Queen&apos;s Park North, Toronto.
             </p>
             <div className="hero-cta">
               <a
@@ -124,9 +124,9 @@ export default function TorontoMarchForLifePage() {
                   <i className="fas fa-map-marker-alt"></i> Location
                 </h2>
                 <p>
-                  <strong>Queen&apos;s Park</strong> — front lawn of the Legislative Assembly of Ontario.
+                  <strong>Queen&apos;s Park North</strong> — rally at the <strong>King Edward VII Equestrian Statue</strong>.
                 </p>
-                <p>1 Queen&apos;s Park Circle, Toronto, ON</p>
+                <p>110 Wellesley St West, Toronto, ON</p>
                 <p>RTLMB encourages carpooling and transit; allow extra time for city traffic and security lines.</p>
               </div>
 
