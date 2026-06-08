@@ -15,7 +15,6 @@ export default function HomePage() {
             <div className="nav-dropdown">
               <a href="#" className="nav-dropdown-toggle">Events <i className="fas fa-chevron-down"></i></a>
               <div className="nav-dropdown-menu">
-                <a href="/events/toronto-march-for-life" className="nav-dropdown-youth">Toronto March for Life</a>
                 <a href="/events/40-days-for-life">40 Days for Life</a>
                 <a href="/events/life-chain">Life Chain</a>
                 <a href="/resources/abortion-euthanasia-101">Resources</a>
@@ -88,16 +87,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="event-banner">
-        <div className="container">
-          <div className="event-banner-inner">
-            <h2 className="event-banner-title">March for Life in Toronto</h2>
-            <p className="event-banner-text">On <strong>Saturday, May 23, 2026</strong>, join the largest annual pro-life gathering in the country: rally and speeches at Queen&apos;s Park North (King Edward VII Equestrian Statue, 110 Wellesley St West), a peaceful march through downtown Toronto, and optional afternoon workshops (advance registration). RTLMB invites Peel families, parishes, and students to stand together for every human life.</p>
-            <a href="/events/toronto-march-for-life" className="btn btn-primary event-banner-cta">Details &amp; official links</a>
-          </div>
-        </div>
-      </section>
-
       {/* Key Events Section */}
       <section id="events" className="key-events">
         <div className="container">
@@ -107,22 +96,12 @@ export default function HomePage() {
           <div className="events-grid">
             <div className="event-tile event-tile-youth">
               <div className="event-tile-icon">
-                <i className="fas fa-person-walking"></i>
-              </div>
-              <h3>Toronto March for Life</h3>
-              <p>Rally, march, and workshops in Canada&apos;s largest city—one day to make the pro-life witness impossible to ignore. Bring your group from Mississauga or Brampton; carpool, plan your route, and register for workshops on the official site.</p>
-              <a href="/events/toronto-march-for-life" className="btn btn-primary">Schedule &amp; location</a>
-              <p className="event-note">Saturday, May 23, 2026 · Queen&apos;s Park North, Toronto · torontomarchforlife.ca</p>
-            </div>
-
-            <div className="event-tile">
-              <div className="event-tile-icon">
                 <i className="fas fa-pray"></i>
               </div>
               <h3>40 Days for Life</h3>
-              <p>Join a peaceful, prayerful vigil to end abortion—through 40 days of prayer & fasting, community outreach, and a lawful, loving presence outside abortion facilities.</p>
+              <p>Join a peaceful, prayerful vigil to end abortion—40 days of prayer &amp; fasting, community outreach, and a loving presence outside abortion facilities. The next coordinated campaign runs <strong>September 23 – November 1, 2026</strong>.</p>
               <a href="/events/40-days-for-life" className="btn btn-primary">Learn More</a>
-              <p className="event-note">Mississauga campaign details are managed on 40DaysForLife.com.</p>
+              <p className="event-note">Mississauga vigil: 101 Queensway Blvd · 7 am–7 pm daily · 40DaysForLife.com</p>
             </div>
             
             <div className="event-tile">
@@ -130,9 +109,9 @@ export default function HomePage() {
                 <i className="fas fa-hands"></i>
               </div>
               <h3>Life Chain</h3>
-              <p>Stand for life in a one-hour, prayerful, public witness held across ~350 Canadian locations each year.</p>
+              <p>Stand for life in a one-hour, prayerful, public witness held across ~350 Canadian locations each year. Mississauga and Brampton host multiple parish-led locations.</p>
               <a href="/events/life-chain" className="btn btn-primary">Find a Location</a>
-              <p className="event-note">Next Life Chain: Sunday, October 5, 2025 (2–3 pm in most locations—check your city).</p>
+              <p className="event-note">Sunday, October 4, 2026 · 2–3 pm in most locations · lifechain.ca</p>
             </div>
             
             <div className="event-tile">
@@ -276,7 +255,6 @@ export default function HomePage() {
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#donate">Donate</a></li>
-                <li><a href="/events/toronto-march-for-life">Toronto March for Life</a></li>
                 <li><a href="/events/40-days-for-life">40 Days for Life</a></li>
                 <li><a href="/events/life-chain">Life Chain</a></li>
                 <li><a href="/resources/abortion-euthanasia-101">Resources</a></li>
@@ -307,7 +285,7 @@ export default function HomePage() {
           </div>
           
           <div className="footer-bottom">
-            <p className="footer-youth-cta">Toronto March for Life — <a href="/events/toronto-march-for-life">May 23, 2026 · details</a></p>
+            <p className="footer-youth-cta">40 Days for Life — <a href="/events/40-days-for-life">Sept 23 – Nov 1, 2026 · details</a></p>
             <p>&copy; 2024 Right to Life Mississauga Brampton. All rights reserved.</p>
           </div>
         </div>
