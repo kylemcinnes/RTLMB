@@ -1240,7 +1240,7 @@ p {
     margin-bottom: 1rem;
 }
 
-.key-events > p {
+.key-events .container > p {
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 3rem;
