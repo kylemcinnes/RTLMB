@@ -885,6 +885,293 @@ p {
     margin-top: 0.5rem;
 }
 
+/* Virtual AGM Banner */
+.agm-banner {
+    padding: 2.75rem 0;
+    background: linear-gradient(135deg, rgba(155, 28, 49, 0.08), rgba(28, 44, 76, 0.06));
+    border-top: 3px solid var(--primary-red);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.agm-banner-inner {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.agm-banner-badge {
+    display: inline-block;
+    background: var(--primary-red);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.85rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.agm-banner-title {
+    color: var(--navy-blue);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.agm-banner-datetime {
+    color: var(--primary-red);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.agm-banner-text {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+.agm-banner-cta {
+    font-size: 1rem;
+    color: var(--navy-blue);
+    font-style: italic;
+    margin: 0;
+}
+
+.agm-banner-cta a {
+    color: var(--primary-red);
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+/* Prominent Newsletter Section */
+.newsletter-prominent {
+    padding: 80px 0;
+    background: white;
+}
+
+.newsletter-prominent .container {
+    max-width: 680px;
+}
+
+.newsletter-prominent-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.newsletter-prominent-header h2 {
+    color: var(--navy-blue);
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.newsletter-prominent-header p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.newsletter-card {
+    background: var(--light-gray);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.newsletter-card .mc-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.newsletter-card label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy-blue);
+}
+
+.newsletter-card input[type="email"] {
+    padding: 12px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.newsletter-card input[type="email"]:focus {
+    outline: none;
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 3px rgba(155, 28, 49, 0.1);
+}
+
+.newsletter-card .btn-subscribe {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-red);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.newsletter-card .btn-subscribe:hover {
+    background: #7a1526;
+    transform: translateY(-2px);
+}
+
+.newsletter-card #mce-responses {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* Parish Outreach Section */
+.parish-outreach {
+    padding: 100px 0;
+    background: var(--off-white);
+}
+
+.parish-outreach-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.parish-outreach-header h2 {
+    color: var(--navy-blue);
+    margin-bottom: 1rem;
+}
+
+.parish-outreach-header p {
+    color: var(--text-gray);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.parish-outreach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.parish-outreach-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.parish-outreach-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.parish-outreach-card i {
+    font-size: 2.25rem;
+    color: var(--primary-red);
+    margin-bottom: 1rem;
+}
+
+.parish-outreach-card h3 {
+    color: var(--navy-blue);
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+}
+
+.parish-outreach-card p {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.parish-outreach-footer {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+}
+
+.parish-outreach-footer p {
+    color: var(--text-gray);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.parish-outreach-footer a {
+    color: var(--primary-red);
+    font-weight: 600;
+}
+
+/* Instagram Promo (reusable) */
+.instagram-promo {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    max-width: 600px;
+    margin: 2.5rem auto 0;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.instagram-promo h3 {
+    color: var(--navy-blue);
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.instagram-promo p {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.instagram-promo-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.instagram-promo-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    color: white;
+}
+
+.instagram-promo-cta i {
+    font-size: 1.25rem;
+}
+
+.donate-newsletter-link {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: var(--text-gray);
+}
+
+.donate-newsletter-link a {
+    color: var(--primary-red);
+    font-weight: 600;
+}
+
 .footer-youth-cta {
     margin-bottom: 0.75rem !important;
 }

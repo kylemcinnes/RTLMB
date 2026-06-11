@@ -54,6 +54,46 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Virtual AGM Announcement */}
+      <section className="agm-banner" aria-label="Virtual Annual General Meeting announcement">
+        <div className="container">
+          <div className="agm-banner-inner">
+            <span className="agm-banner-badge">Upcoming</span>
+            <h2 className="agm-banner-title">Virtual Annual General Meeting</h2>
+            <p className="agm-banner-datetime">Saturday, June 27, 2026 &nbsp;|&nbsp; 10:30 a.m. – 12:00 p.m.</p>
+            <p className="agm-banner-text">Join us for our Virtual Annual General Meeting. We&apos;ll hear inspiring reflections from our youth and review the year&apos;s work building a culture of life.</p>
+            <p className="agm-banner-cta">Zoom link and poster will be shared via our newsletter. <a href="#newsletter">Join the newsletter below</a> to receive all details.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Signup (prominent) */}
+      <section id="newsletter" className="newsletter-prominent">
+        <div className="container">
+          <div className="newsletter-prominent-header">
+            <h2>Stay informed through our newsletter</h2>
+            <p>Receive the Virtual AGM details on June 27, event updates, and ways to support the mission directly in your inbox. This is our primary way of sharing important information.</p>
+          </div>
+          <div className="newsletter-card">
+            <form action="https://rtlmb.us19.list-manage.com/subscribe/post?u=45ee4748acda5b1f7c9cb16bf&amp;id=65cd9fff23&amp;f_id=009f34e7f0" method="post" target="_blank" noValidate id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+              <div className="mc-field-group">
+                <label htmlFor="mce-EMAIL">Email address <span style={{color: '#dc2626'}}>*</span></label>
+                <input type="email" name="EMAIL" id="mce-EMAIL" required placeholder="you@example.com" />
+                <input type="hidden" name="tags" value="24263874" />
+              </div>
+              <div aria-hidden="true" style={{position: 'absolute', left: '-5000px'}}>
+                <input type="text" name="b_45ee4748acda5b1f7c9cb16bf_65cd9fff23" tabIndex={-1} value="" />
+              </div>
+              <button type="submit" name="subscribe" id="mc-embedded-subscribe" className="btn-subscribe">Subscribe</button>
+              <div id="mce-responses">
+                <div className="response" id="mce-error-response" style={{display: 'none', color: '#b91c1c'}}></div>
+                <div className="response" id="mce-success-response" style={{display: 'none', color: '#166534'}}></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="about">
         <div className="container">
@@ -83,6 +123,44 @@ export default function HomePage() {
             <div className="about-image">
               <img src="/images/hero.jpg" alt="Mother and baby - Every life is a gift" style={{width: '100%', borderRadius: '8px'}} />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Parish Outreach Section */}
+      <section id="get-involved" className="parish-outreach">
+        <div className="container">
+          <div className="parish-outreach-header">
+            <h2>Get Involved in Your Parish</h2>
+            <p>RTLMB&apos;s heart is in our parishes. We work alongside clergy and parishioners to bring the Gospel of life to every corner of Mississauga and Brampton—through prayer, presence, and gentle witness.</p>
+          </div>
+          <div className="parish-outreach-grid">
+            <div className="parish-outreach-card">
+              <i className="fas fa-church" aria-hidden="true"></i>
+              <h3>Pulpit Speeches</h3>
+              <p>We share the mission of protecting life from fertilization to natural death with parish communities through thoughtful pulpit announcements that invite prayer and action.</p>
+            </div>
+            <div className="parish-outreach-card">
+              <i className="fas fa-handshake" aria-hidden="true"></i>
+              <h3>Presence After Mass</h3>
+              <p>Our volunteers are present after Mass to connect with parishioners, share resources, and invite families to join events like Life Chain and 40 Days for Life.</p>
+            </div>
+            <div className="parish-outreach-card">
+              <i className="fas fa-users" aria-hidden="true"></i>
+              <h3>Building Parish Connections</h3>
+              <p>We partner with parishes across Peel Region to strengthen a culture of life—one relationship, one conversation, and one act of charity at a time.</p>
+            </div>
+          </div>
+          <div className="parish-outreach-footer">
+            <p>Want to help at your parish or stay in the loop? <a href="#newsletter">Join our newsletter</a>—it&apos;s how we share opportunities to serve and upcoming events.</p>
+          </div>
+          <div className="instagram-promo">
+            <h3>Follow us on Instagram</h3>
+            <p>For creative updates and special funding opportunities that support our work in the community.</p>
+            <a href="https://www.instagram.com/righttolifemb/" className="instagram-promo-cta" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram" aria-hidden="true"></i>
+              @righttolifemb
+            </a>
           </div>
         </div>
       </section>
@@ -153,88 +231,17 @@ export default function HomePage() {
             <div className="donation-note">
               <p><i className="fas fa-info-circle"></i> All donations are processed securely through CanadaHelps.org. Tax receipts are automatically generated.</p>
             </div>
-            
-            {/* Newsletter Signup */}
-            <div className="newsletter-signup-section" style={{ 
-              display: 'block', 
-              visibility: 'visible', 
-              opacity: 1,
-              marginTop: '3rem',
-              padding: '2rem',
-              background: '#f5f5f5',
-              borderRadius: '15px',
-              textAlign: 'center',
-              maxWidth: '600px',
-              marginLeft: 'auto',
-              marginRight: 'auto'
-            } as React.CSSProperties}>
-              <h3 style={{ color: '#1c2c4c', marginBottom: '1rem', fontSize: '1.5rem' }}>Stay Connected</h3>
-              <p style={{ marginBottom: '2rem', color: '#666' }}>Subscribe to our newsletter for updates on our work and upcoming events.</p>
-              
-              {/* Mailchimp Embedded Signup Form */}
-              <div id="mc_embed_shell">
-                <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
-                <style dangerouslySetInnerHTML={{
-                  __html: `
-                    #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 100%; max-width: 500px; margin: 0 auto;}
-                    #mc_embed_signup h2 { color: #1c2c4c; margin-bottom: 1rem; }
-                    #mc_embed_signup .button { background-color: #9b1c31 !important; border: none !important; color: white !important; padding: 10px 20px !important; border-radius: 5px !important; cursor: pointer !important; }
-                    #mc_embed_signup .button:hover { background-color: #7a1526 !important; }
-                  `
-                }} />
-                <div id="mc_embed_signup">
-                  <form action="https://rtlmb.us19.list-manage.com/subscribe/post?u=45ee4748acda5b1f7c9cb16bf&amp;id=65cd9fff23&amp;f_id=009f34e7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank">
-                    <div id="mc_embed_signup_scroll">
-                      <h2>Subscribe</h2>
-                      <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
-                      <div className="mc-field-group">
-                        <label htmlFor="mce-EMAIL">Email Address <span className="asterisk">*</span></label>
-                        <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" required value="" />
-                      </div>
-                      <div hidden>
-                        <input type="hidden" name="tags" value="24263874" />
-                      </div>
-                      <div id="mce-responses" className="clear foot">
-                        <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
-                        <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
-                      </div>
-                      <div aria-hidden="true" style={{position: 'absolute', left: '-5000px'}}>
-                        <input type="text" name="b_45ee4748acda5b1f7c9cb16bf_65cd9fff23" tabIndex={-1} value="" />
-                      </div>
-                      <div className="optionalParent">
-                        <div className="clear foot">
-                          <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="button" value="Subscribe" />
-                          <p style={{margin: '10px auto 0', fontSize: '12px', color: '#666'}}>
-                            <a href="http://eepurl.com/jogCxw" title="Mailchimp - email marketing made easy and fun">
-                              <span style={{display: 'inline-block', backgroundColor: 'transparent', borderRadius: '4px'}}>
-                                <img className="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style={{width: '220px', height: '40px', display: 'flex', padding: '2px 0px', justifyContent: 'center', alignItems: 'center'}} />
-                              </span>
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-                <script dangerouslySetInnerHTML={{
-                  __html: `
-                    (function($) {
-                      window.fnames = new Array(); 
-                      window.ftypes = new Array();
-                      fnames[0]='EMAIL';ftypes[0]='email';
-                      fnames[1]='FNAME';ftypes[1]='text';
-                      fnames[2]='LNAME';ftypes[2]='text';
-                      fnames[3]='ADDRESS';ftypes[3]='address';
-                      fnames[4]='PHONE';ftypes[4]='phone';
-                      fnames[5]='BIRTHDAY';ftypes[5]='birthday';
-                      fnames[6]='COMPANY';ftypes[6]='text';
-                    }(jQuery));
-                    var $mcj = jQuery.noConflict(true);
-                  `
-                }} />
-              </div>
+
+            <div className="instagram-promo">
+              <h3>Follow us on Instagram</h3>
+              <p>For creative updates and special funding opportunities that support our work in the community.</p>
+              <a href="https://www.instagram.com/righttolifemb/" className="instagram-promo-cta" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-instagram" aria-hidden="true"></i>
+                @righttolifemb
+              </a>
             </div>
+
+            <p className="donate-newsletter-link">Stay informed: <a href="#newsletter">join our newsletter</a> for event updates and AGM details.</p>
             
           </div>
         </div>
