@@ -54,15 +54,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Virtual AGM Announcement */}
-      <section className="agm-banner" aria-label="Virtual Annual General Meeting announcement">
+      {/* Virtual AGM Notice */}
+      <section className="agm-banner" aria-label="Virtual Annual General Meeting update">
         <div className="container">
           <div className="agm-banner-inner">
-            <span className="agm-banner-badge">Upcoming</span>
+            <span className="agm-banner-badge">Update</span>
             <h2 className="agm-banner-title">Virtual Annual General Meeting</h2>
-            <p className="agm-banner-datetime">Saturday, June 27, 2026 &nbsp;|&nbsp; 10:30 a.m. – 12:00 p.m.</p>
-            <p className="agm-banner-text">Join us for our Virtual Annual General Meeting. We&apos;ll hear inspiring reflections from our youth and review the year&apos;s work building a culture of life.</p>
-            <p className="agm-banner-cta">Zoom link and poster will be shared via our newsletter. <a href="#newsletter">Join the newsletter below</a> to receive all details.</p>
+            <p className="agm-banner-text">Our Virtual Annual General Meeting has been delayed. A new date will be announced soon—please stay in touch to hear when it will take place.</p>
+            <p className="agm-banner-cta"><a href="#newsletter">Join our newsletter below</a> to be the first to know when the new date is announced.</p>
           </div>
         </div>
       </section>
@@ -72,7 +71,7 @@ export default function HomePage() {
         <div className="container">
           <div className="newsletter-prominent-header">
             <h2>Stay informed through our newsletter</h2>
-            <p>Receive the Virtual AGM details on June 27, event updates, and ways to support the mission directly in your inbox. This is our primary way of sharing important information.</p>
+            <p>Receive event updates, news about our rescheduled Virtual AGM, and ways to support the mission directly in your inbox. This is our primary way of sharing important information.</p>
           </div>
           <div className="newsletter-card">
             <form action="https://rtlmb.us19.list-manage.com/subscribe/post?u=45ee4748acda5b1f7c9cb16bf&amp;id=65cd9fff23&amp;f_id=009f34e7f0" method="post" target="_blank" noValidate id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
@@ -241,7 +240,7 @@ export default function HomePage() {
               </a>
             </div>
 
-            <p className="donate-newsletter-link">Stay informed: <a href="#newsletter">join our newsletter</a> for event updates and AGM details.</p>
+            <p className="donate-newsletter-link">Stay informed: <a href="#newsletter">join our newsletter</a> for event updates and announcements.</p>
             
           </div>
         </div>
