@@ -178,7 +178,7 @@ export default function HomePage() {
               <h3>40 Days for Life</h3>
               <p>Join a peaceful, prayerful vigil to end abortion—40 days of prayer &amp; fasting, community outreach, and a loving presence outside abortion facilities. The next coordinated campaign runs <strong>September 23 – November 1, 2026</strong>.</p>
               <a href="/events/40-days-for-life" className="btn btn-primary">Learn More</a>
-              <p className="event-note">Mississauga vigil: 101 Queensway Blvd · 7 am–7 pm daily · 40DaysForLife.com</p>
+              <p className="event-note">Mississauga vigil: 101 The Queensway · 8 am–8 pm daily · 40DaysForLife.com/Mississauga</p>
             </div>
             
             <div className="event-tile">
