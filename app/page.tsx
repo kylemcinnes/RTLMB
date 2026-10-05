@@ -178,7 +178,7 @@ export default function HomePage() {
               <h3>40 Days for Life</h3>
               <p>Join a peaceful, prayerful vigil to end abortion—40 days of prayer &amp; fasting, community outreach, and a loving presence outside abortion facilities. The next coordinated campaign runs <strong>September 23 – November 1, 2026</strong>.</p>
               <a href="/events/40-days-for-life" className="btn btn-primary">Learn More</a>
-              <p className="event-note">Mississauga vigil: 101 The Queensway · 8 am–8 pm daily · 40DaysForLife.com/Mississauga</p>
+              <p className="event-note">Mississauga vigil: 101 The Queensway · 8 am–8 pm daily · 40DaysForLife.com/Mississauga<br />Mid Point Mass: Sunday, October 18 at 1:00 pm · St. Catherine of Siena Parish, 2340 Hurontario St.</p>
             </div>
             
             <div className="event-tile">
@@ -291,7 +291,7 @@ export default function HomePage() {
           </div>
           
           <div className="footer-bottom">
-            <p className="footer-youth-cta">40 Days for Life — <a href="/events/40-days-for-life">Sept 23 – Nov 1, 2026 · details</a></p>
+            <p className="footer-youth-cta">40 Days for Life — <a href="/events/40-days-for-life">Mid Point Mass, Sunday Oct 18 at 1:00 pm · details</a></p>
             <p>&copy; 2024 Right to Life Mississauga Brampton. All rights reserved.</p>
           </div>
         </div>
