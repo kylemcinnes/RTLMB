@@ -195,7 +195,8 @@ p {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: calc(100vh - 72px);
+    min-height: 500px;
     position: relative;
     display: flex;
     align-items: center;
@@ -203,6 +204,12 @@ p {
     text-align: center;
     color: white;
     overflow: hidden;
+}
+
+.has-top-announcement + .hero,
+.closing-mass-announcement + .hero {
+    height: calc(100vh - 150px);
+    min-height: 450px;
 }
 
 .hero-background {
@@ -1582,6 +1589,119 @@ p {
 /* Youth event tile subtle emphasis */
 .event-tile-youth::before {
     background: linear-gradient(135deg, var(--primary-red), #b91c47);
+}
+
+/* Closing Mass Top Announcement */
+.closing-mass-announcement {
+    position: relative;
+    padding: 1.25rem 0;
+    background: linear-gradient(135deg, var(--primary-red), #b91c47);
+    color: white;
+    margin-top: 72px;
+    z-index: 100;
+}
+
+.closing-mass-announcement-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 2rem;
+    text-align: center;
+}
+
+.closing-mass-announcement-badge {
+    display: inline-block;
+    background: white;
+    color: var(--primary-red);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.closing-mass-announcement-content {
+    flex: 1 1 auto;
+    min-width: 280px;
+}
+
+.closing-mass-announcement-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem;
+    color: white;
+}
+
+.closing-mass-announcement-details {
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.closing-mass-announcement-details strong {
+    color: white;
+}
+
+.closing-mass-announcement-details a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.closing-mass-announcement-details a:hover {
+    text-decoration: none;
+}
+
+.closing-mass-announcement-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    background: white;
+    color: var(--primary-red);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.closing-mass-announcement-cta:hover {
+    background: var(--off-white);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .closing-mass-announcement {
+        padding: 1rem 0;
+        margin-top: 64px;
+    }
+
+    .closing-mass-announcement-inner {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .closing-mass-announcement-title {
+        font-size: 1.1rem;
+    }
+
+    .closing-mass-announcement-details {
+        font-size: 0.9rem;
+    }
+
+    .closing-mass-announcement-cta {
+        width: 100%;
+        justify-content: center;
+        max-width: 280px;
+    }
 }
 
 /* Key Events Tiles */
